@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="bis23.html">BIS 23 ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="equipbudget.html">Equipment Budget</a></li>
+          <li><a href="Webtechseries.html">Web Tech Series</a></li>
+          <li><a href="https://cruzd08.github.io/cruzdelossantos.github.io/index.html" target="_blank">Setting Up Web Server</a></li>
+          <li><a href="wsproposal3.html">Requirement Documents</a></li>
+          <li><a href="https://cruzd08.github.io/CSS-Nav-Menu/" target="_blank">CSS Navigation</a></li>
+          <li><a href="debugging.html">Debugging &amp; Pseudo Code</a></li>
+          <li><a href="jspresentation.html">JS Presentation</a></li>
+          <li><a href="mpgcalculator.html">MPG Calculator</a></li>
+          <li><a href="slider.html">Image Slider</a></li>
+          <li><a href="airisen.html">AI RISEN</a></li>
+          <li><a href="invoice.html">Invoice Form</a></li>
+          <li><a href="mortgage.html">Mortgage Calculator</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="bis31.html">BIS 31 ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="researchbusws.html">Research Business Web Sites</a></li>
+          <li><a href="https://cruzd08.github.io/cruzdelossantos.github.io/index.html" target="_blank">Setting Up Web Server</a></li>
+          <li><a href="wsproposal1.html">Requirement Documents</a></li>
+          <li><a href="phpquiz.html">W3Schools PHP Quiz</a></li>
+          <li><a href="https://cruzd08.github.io/CSS-Nav-Menu/" target="_blank">CSS Navigation</a></li>
+          <li><a href="php_loops.html">PHP Loops</a></li>
+          <li><a href="randomValues.php">Random Numbers in PHP</a></li>
+          <li><a href="signupform.html">Sign Up Form</a></li>
+          <li><a href="webform.html">PHP &amp; MySQL Setup</a></li>
+          <li><a href="paycheck.html">Paycheck Calculator</a></li>
+        </ul>
+      </li>
+      <li><a href="bis23projects.html">BIS 23 Projects</a></li>
+      <li><a href="bis31projects.html">BIS 31 Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="page-intro fade-up">
+    <span class="badge">BIS 23</span>
+    <h1>Home Mortgage Calculator</h1>
+    <p>Enter the amount of the mortgage, the interest rate of the loan, and the number of years. Then click Calculate to see an estimate of your monthly payment.</p>
+  </div>
+
+  <div class="wf-card fade-up delay-1">
+
+    <div class="wf-icon">🏠</div>
+    <h2 class="wf-title">Mortgage Calculator</h2>
+    <p class="wf-desc">Fill in the fields below and click Calculate.</p>
+
+    <div class="calc-divider">loan details</div>
+
+    <form name="Form1">
+
+      <div class="calc-field">
+        <label>Mortgage Amount ($)</label>
+        <input type="text" name="Amount" value=" " placeholder="e.g. 350000">
+      </div>
+
+      <div class="calc-field">
+        <label>Interest Rate (e.g. 9.95)</label>
+        <input type="text" name="Rate" value=" " placeholder="e.g. 9.95">
+      </div>
+
+      <div class="calc-field">
+        <label>Number of Years</label>
+        <select name="Years">
+          <option value="0">0</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+      </div>
+
+      <div class="calc-divider">result</div>
+
+      <div class="calc-field payment-field">
+        <label>Your Monthly Payment</label>
+        <input type="text" name="Payment" placeholder="Result will appear here...">
+      </div>
+
+      <div class="btn-row">
+        <input type="button" value="Calculate" onclick="mortCalc(Form1)" class="calc-btn">
+        <input type="reset" value="Reset" class="btn-reset">
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© Copyright 2026. All Rights Reserved.</p>
+  <p><a href="mailto:cruzmeirycollado@gmail.com">cruzmeirycollado@gmail.com</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
