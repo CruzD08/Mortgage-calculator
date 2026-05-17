@@ -252,6 +252,7 @@
   const submitBtn = document.getElementById('wfSubmitBtn');
   const successEl = document.getElementById('wfSuccess');
   const errorEl   = document.getElementById('wfError');
+  if (!form) return;
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault(); // Stop page from redirecting
